@@ -19,3 +19,4 @@
 * 1:55: Watch follow up video on shooting tutorial
 * 1:25(DST): Watch Video on collision with objects
 * 2:30: Watch part 2 and 3 of collision
+* 3:15: Read over some of Unity docs on Collision

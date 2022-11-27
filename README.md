@@ -26,3 +26,4 @@
 * 3:50 - 4:40 learn more about movement through a tutorial, learn that it differs from VR movement a lot more than I had realized, much to learn and should be fun to implement
 * https://www.youtube.com/watch?v=VaJseHy_iI4&list=PLS7jk2aVN8G4b-uuf-M0_fhQjL7KEmQwU found good tutorial series to reference - has up to date info rather than the years old out of date stuff in a lot of tutorials
 * 6:40: Read about input systems - https://docs.unity3d.com/ScriptReference/Input.html
+* 7:10: Try and get movement working, but it's still very janky

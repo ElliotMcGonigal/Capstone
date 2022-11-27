@@ -20,3 +20,7 @@
 * 1:25(DST): Watch Video on collision with objects
 * 2:30: Watch part 2 and 3 of collision
 * 3:15: Read over some of Unity docs on Collision
+
+#### Sunday 11/27
+* 3:00 - 3:50: Set up git ignore, set up new 3d unity project, get project to properly add and commit with git, struggle with git for 20 minutes, finally get it to work
+* 3:50 - 4:40 learn more about movement through a tutorial, learn that it differs from VR movement a lot more than I had realized, much to learn and should be fun to implement

@@ -25,3 +25,4 @@
 * 3:00 - 3:50: Set up git ignore, set up new 3d unity project, get project to properly add and commit with git, struggle with git for 20 minutes, finally get it to work
 * 3:50 - 4:40 learn more about movement through a tutorial, learn that it differs from VR movement a lot more than I had realized, much to learn and should be fun to implement
 * https://www.youtube.com/watch?v=VaJseHy_iI4&list=PLS7jk2aVN8G4b-uuf-M0_fhQjL7KEmQwU found good tutorial series to reference - has up to date info rather than the years old out of date stuff in a lot of tutorials
+* 6:40: Read about input systems

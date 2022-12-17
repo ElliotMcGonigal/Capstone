@@ -17,11 +17,11 @@ public class PlayerController : MonoBehaviour {
     Vector3 newVelocity;
 
     void Update() {
-        newVelocity = Vector3.up * rb.velocity.y;
+        newVelocity = Vector3.up * player.velocity.y;
         float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
         newVelocity.x = Input.GetAxis("Horizontal") * speed;
         newVelocity.z = Input.GetAxis("Vertical") * speed;
 
-        rb.velocity = transform.TransformDirection(newVelocity);
+        player.velocity = transform.TransformDirection(newVelocity);
     }
 }

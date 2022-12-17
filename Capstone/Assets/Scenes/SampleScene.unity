@@ -528,6 +528,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585b14aa8e079e54fa8aec345ccd0c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 1440938920}
+  head: {fileID: 2038433409}
+  camera: {fileID: 580338894}
+  walkSpeed: 0
+  runSpeed: 0
 --- !u!1 &2038433408
 GameObject:
   m_ObjectHideFlags: 0

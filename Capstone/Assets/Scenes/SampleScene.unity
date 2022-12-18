@@ -646,6 +646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasksCompleted: 0
+  TargetItem: {fileID: 8221256656408519103, guid: 1d4700cfe9c529c46838da1ca45d4e43, type: 3}
+  TargetLocation: {fileID: 6886938443468682289, guid: cb041ec53b7f72f49ba0c463d92b5f7a, type: 3}
   taskList:
   - FindAndDeliver
   - AvoidEnemy

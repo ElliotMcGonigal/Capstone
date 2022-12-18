@@ -5,11 +5,13 @@ using UnityEngine;
 public class TaskController : MonoBehaviour
 {
     public int tasksCompleted = 0;
+    public GameObject TargetItem;
+    public GameObject TargetLocation;
     public string[] taskList= new string[]{"FindAndDeliver", "AvoidEnemy", "DefeatEnemy", "GoToLocation", "JumpFiveTimes"};
 
-    void Update()
+    void Start()
     {
-        
+        FindAndDeliver();
     }
 
     public void TaskCompleted()
@@ -22,7 +24,8 @@ public class TaskController : MonoBehaviour
 
     void FindAndDeliver()
     {
-
+        Instantiate(TargetItem, new Vector3(0, 1, 0), Quaternion.identity);
+        Instantiate(TargetLocation, new Vector3(5, -5, 6), Quaternion.identity);
     }
     void AvoidEnemy()
     {

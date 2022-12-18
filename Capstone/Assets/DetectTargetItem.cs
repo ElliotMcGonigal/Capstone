@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class DetectTargetItem : MonoBehaviour
 {
-    public TaskController otherClass;
+    //public TaskController otherClass;
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name=="TargetItem")
+        Debug.Log("o");
+        if(other.gameObject.tag=="pickable")
         {
+            Debug.Log("inside");
             Destroy(other.gameObject);
-            otherClass.TaskCompleted();
+            GameObject.Find("Player").GetComponent<TaskController>().TaskCompleted();
             Destroy(gameObject);
         }
     }

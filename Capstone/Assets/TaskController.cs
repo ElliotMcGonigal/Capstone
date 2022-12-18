@@ -36,18 +36,19 @@ public class TaskController : MonoBehaviour
     void FindAndDeliver()
     {
         GameObject.Find("Task").GetComponent<TextMeshProUGUI>().text = "Current Objective: Find the orb and place it in the pillar.";
-        Instantiate(TargetItem, new Vector3(0, 1, 0), Quaternion.identity);
-        Instantiate(TargetLocation, new Vector3(5, -5, 6), Quaternion.identity);
+        Instantiate(TargetItem, new Vector3(Random.Range(-9f, 9f), 1, Random.Range(-9f, 9f)), Quaternion.identity);
+        Instantiate(TargetLocation, new Vector3(Random.Range(-9f, 9f), -5, Random.Range(-9f, 9f)), Quaternion.identity);
     }
     void DefeatEnemy()
     {
         GameObject.Find("Task").GetComponent<TextMeshProUGUI>().text = "Current Objective: Defeat the Goblin";
-        Instantiate(EnemyDefeat, new Vector3(9, 0, 9), Quaternion.identity);
+        Instantiate(EnemyDefeat, new Vector3(Random.Range(-9f, 9f), 0, Random.Range(-9f, 9f)), Quaternion.identity);
+        GameObject.Find("Sword Long").transform.position = new Vector3(0f, 1, 0f);
     }
     void GoToLocation()
     {
         GameObject.Find("Task").GetComponent<TextMeshProUGUI>().text = "Current Objective: Go to the Circle";
-        Instantiate(PlayerLocation, new Vector3(-3, 0, -7), Quaternion.identity);
+        Instantiate(PlayerLocation, new Vector3(Random.Range(-9f, 9f), 0, Random.Range(-9f, 9f)), Quaternion.identity);
     }
     void JumpFiveTimes()
     {

@@ -555,7 +555,6 @@ MonoBehaviour:
   EnemyDefeat: {fileID: 8533383737627748820, guid: c3c6b0fc005d4884bac8fc55248607ac, type: 3}
   taskList:
   - FindAndDeliver
-  - AvoidEnemy
   - DefeatEnemy
   - GoToLocation
   - JumpFiveTimes

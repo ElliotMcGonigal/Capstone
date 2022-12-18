@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Space) && !isJumping) {
                 newVelocity.y = jumpSpeed;
                 isJumping = true;
+                GameObject.Find("Player").GetComponent<TaskController>().Jumped();
             }
         }
 

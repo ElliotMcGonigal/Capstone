@@ -9,19 +9,24 @@ public class TaskController : MonoBehaviour
     public GameObject TargetLocation;
     public GameObject PlayerLocation;
     public GameObject EnemyDefeat;
+    public int Jumps = 0;
+    public string currentTask;
     public string[] taskList= new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes"};
 
     void Start()
     {
-        DefeatEnemy();
+        currentTask = "JumpFiveTimes";
+        JumpFiveTimes();
     }
 
     public void TaskCompleted()
     {
+        Jumps = 0;
         tasksCompleted++;
         int rand = Random.Range(0, 4);
         Debug.Log(taskList[rand]);
         string tempTask = taskList[rand];
+        currentTask = tempTask;
         Invoke(tempTask, 1f);
     }
 
@@ -41,5 +46,17 @@ public class TaskController : MonoBehaviour
     void JumpFiveTimes()
     {
 
+    }
+    public void Jumped()
+    {
+        Debug.Log("got here");
+        if (currentTask == "JumpFiveTimes")
+        {
+            Jumps++;
+        }
+        if (Jumps >= 5)
+        {
+            TaskCompleted();
+        }
     }
 }

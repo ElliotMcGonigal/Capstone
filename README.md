@@ -27,3 +27,9 @@
 * https://www.youtube.com/watch?v=VaJseHy_iI4&list=PLS7jk2aVN8G4b-uuf-M0_fhQjL7KEmQwU found good tutorial series to reference - has up to date info rather than the years old out of date stuff in a lot of tutorials
 * 6:40: Read about input systems - https://docs.unity3d.com/ScriptReference/Input.html
 * 7:10: Try and get movement working, but it's still very janky
+
+
+#### Sunday 12/11 - Tuesday 12/13
+* Went through series on movement after learning that the one I learned did not work with the form of score keeping I was trying to use. https://www.youtube.com/@Yeahlowflicker
+* Learned more about collision on Unity https://docs.unity3d.com/Manual/CollidersOverview.html
+* Learned how to get others scripts to see my functions. https://docs.unity3d.com/ScriptReference/Input.html

@@ -510,6 +510,7 @@ GameObject:
   - component: {fileID: 1440938916}
   - component: {fileID: 1440938920}
   - component: {fileID: 1440938921}
+  - component: {fileID: 1440938922}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -632,6 +633,25 @@ MonoBehaviour:
   runSpeed: 9
   jumpSpeed: 6
   itemPickupDistance: 4
+--- !u!114 &1440938922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440938915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097e30372fff5946b13a35aa15e2804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tasksCompleted: 0
+  taskList:
+  - FindAndDeliver
+  - AvoidEnemy
+  - DefeatEnemy
+  - GoToLocation
+  - JumpFiveTimes
 --- !u!1 &2038433408
 GameObject:
   m_ObjectHideFlags: 0

@@ -355,6 +355,7 @@
 "Assets/DetectPlayer.cs"
 "Assets/DetectSword.cs"
 "Assets/DetectTargetItem.cs"
+"Assets/EnemyFollow.cs"
 "Assets/PlayerController.cs"
 "Assets/TaskController.cs"
 -langversion:9.0

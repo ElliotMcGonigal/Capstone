@@ -8,17 +8,18 @@ public class TaskController : MonoBehaviour
     public GameObject TargetItem;
     public GameObject TargetLocation;
     public GameObject PlayerLocation;
-    public string[] taskList= new string[]{"FindAndDeliver", "AvoidEnemy", "DefeatEnemy", "GoToLocation", "JumpFiveTimes"};
+    public GameObject EnemyDefeat;
+    public string[] taskList= new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes"};
 
     void Start()
     {
-        GoToLocation();
+        DefeatEnemy();
     }
 
     public void TaskCompleted()
     {
         tasksCompleted++;
-        int rand = Random.Range(0, 5);
+        int rand = Random.Range(0, 4);
         Debug.Log(taskList[rand]);
         string tempTask = taskList[rand];
         Invoke(tempTask, 1f);
@@ -29,13 +30,9 @@ public class TaskController : MonoBehaviour
         Instantiate(TargetItem, new Vector3(0, 1, 0), Quaternion.identity);
         Instantiate(TargetLocation, new Vector3(5, -5, 6), Quaternion.identity);
     }
-    void AvoidEnemy()
-    {
-
-    }
     void DefeatEnemy()
     {
-
+        Instantiate(EnemyDefeat, new Vector3(9, 0, 9), Quaternion.identity);
     }
     void GoToLocation()
     {

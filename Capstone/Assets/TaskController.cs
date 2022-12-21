@@ -13,7 +13,7 @@ public class TaskController : MonoBehaviour
     public GameObject EnemyDefeat;
     public int Jumps = 0;
     public string currentTask;
-    public string[] taskList= new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes"};
+    public string[] taskList= new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes", "CatchDragon"};
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class TaskController : MonoBehaviour
         Jumps = 0;
         tasksCompleted++;
         GameObject.Find("Score").GetComponent<TextMeshProUGUI>().text = "Score: " + tasksCompleted.ToString();
-        int rand = Random.Range(0, 4);
+        int rand = Random.Range(0, 5);
         Debug.Log(taskList[rand]);
         string tempTask = taskList[rand];
         currentTask = tempTask;
@@ -64,5 +64,9 @@ public class TaskController : MonoBehaviour
         {
             TaskCompleted();
         }
+    }
+    void CatchDragon()
+    {
+        GameObject.Find("Task").GetComponent<TextMeshProUGUI>().text = "Current Objective: Catch the dragon hatchling that is flying around.";
     }
 }

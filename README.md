@@ -30,6 +30,6 @@
 
 
 #### Sunday 12/11 - Tuesday 12/13
-* Went through series on movement after learning that the one I learned did not work with the form of score keeping I was trying to use. https://www.youtube.com/@Yeahlowflicker
-* Learned more about collision on Unity https://docs.unity3d.com/Manual/CollidersOverview.html
-* Learned how to get others scripts to see my functions. https://docs.unity3d.com/ScriptReference/Input.html
+* Went through series on movement after learning that the one I learned did not work with the form of score keeping I was trying to use. https://www.youtube.com/@Yeahlowflicker - 4 hours
+* Learned more about collision on Unity https://docs.unity3d.com/Manual/CollidersOverview.html   -  1 hour
+* Learned how to get others scripts to see my functions. https://docs.unity3d.com/ScriptReference/Input.html   -  3 hours

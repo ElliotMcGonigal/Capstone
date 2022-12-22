@@ -27,6 +27,12 @@ GNU gpl 3.0 view LICENSE for more details
 
 
 ### Research & Planning Log
+Total times - Watching videos on the subject - 25 hours
+Reading Unity Documentation - 3 hours
+Writing C# Scripts - 22 hours
+Creating Unity Objects - 12 hours
+Other Reading/README writing - 5ish hours
+
 #### Sunday, 11/6
 * 0:00: Starting Capstone proposal
 * 0:30: Finishing Capstone proposal

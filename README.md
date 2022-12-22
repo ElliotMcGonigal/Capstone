@@ -1,3 +1,9 @@
+# Unity Capstone Project for Epicodus
+#### Project by Elliot McGonigal
+## Description
+This is a game in Unity where you complete tasks to get a higher score. It is fantasy themed with a goblin and a baby dragon making an appearance.
+## Technologies Used
+* C#
 
 
 

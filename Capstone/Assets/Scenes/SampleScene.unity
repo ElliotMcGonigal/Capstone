@@ -1405,23 +1405,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!1 &1006198465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4909859692434289696, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-  m_PrefabInstance: {fileID: 4909859691020152215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1006198466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006198465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f519b8143e3e41e43838b258e138f0e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1151582331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1799,6 +1782,7 @@ MonoBehaviour:
   TargetLocation: {fileID: 6886938443468682289, guid: cb041ec53b7f72f49ba0c463d92b5f7a, type: 3}
   PlayerLocation: {fileID: 4528963999376430667, guid: 9ee4df002674605479e1282b1212842a, type: 3}
   EnemyDefeat: {fileID: 8533383737627748820, guid: c3c6b0fc005d4884bac8fc55248607ac, type: 3}
+  Dragon: {fileID: 3873993046831633528, guid: 7571dd79295267b4ca99aeb6f8a502af, type: 3}
   Jumps: 0
   currentTask: 
   taskList:
@@ -1806,6 +1790,7 @@ MonoBehaviour:
   - DefeatEnemy
   - GoToLocation
   - JumpFiveTimes
+  - CatchDragon
 --- !u!1 &1592825523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,63 +2727,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
   m_PrefabInstance: {fileID: 2081073925}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4909859691020152215
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.557
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692433923624, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909859692434289696, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
-      propertyPath: m_Name
-      value: Dragon
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7779b1085b83f014cab5d81c6e80b5af, type: 3}
 --- !u!1001 &5426355503473223625
 PrefabInstance:
   m_ObjectHideFlags: 0

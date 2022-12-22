@@ -10,7 +10,7 @@ public class DragonCircle : MonoBehaviour
     void Start()
     {
         transform.rotation = Quaternion.Euler(0, 90, 0);
-        speed = .1f;
+        speed = .05f;
         width = 18f;
     }
 
@@ -19,11 +19,16 @@ public class DragonCircle : MonoBehaviour
         timeCounter += Time.fixedDeltaTime*speed;
 
         float x = (Mathf.Cos(timeCounter))*width;
-        float y = 5;
+        float y = 4;
         float z = (Mathf.Sin(timeCounter))*width;
 
         transform.position = new Vector3(x, y, z);
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(x, y, z));
         transform.rotation = Quaternion.Euler(lookRotation.eulerAngles.x, lookRotation.eulerAngles.y - 90, lookRotation.eulerAngles.z);
+        if (transform.parent != null)
+        {
+            GameObject.Find("Player").GetComponent<TaskController>().TaskCompleted();
+            Destroy(gameObject);
+        }
     }
 }

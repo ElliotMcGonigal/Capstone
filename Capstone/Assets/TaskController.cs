@@ -11,12 +11,14 @@ public class TaskController : MonoBehaviour
     public GameObject TargetLocation;
     public GameObject PlayerLocation;
     public GameObject EnemyDefeat;
+    public GameObject Dragon;
     public int Jumps = 0;
     public string currentTask;
-    public string[] taskList= new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes", "CatchDragon"};
+    public string[] taskList = new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes", "CatchDragon"};
 
     void Start()
     {
+        taskList = new string[]{"FindAndDeliver", "DefeatEnemy", "GoToLocation", "JumpFiveTimes", "CatchDragon"};
         currentTask = "GoToLocation";
         GoToLocation();
     }
@@ -67,6 +69,7 @@ public class TaskController : MonoBehaviour
     }
     void CatchDragon()
     {
+        Instantiate(Dragon, new Vector3(0, 0, 0), Quaternion.identity);
         GameObject.Find("Task").GetComponent<TextMeshProUGUI>().text = "Current Objective: Catch the dragon hatchling that is flying around.";
     }
 }

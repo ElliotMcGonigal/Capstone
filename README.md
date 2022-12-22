@@ -20,8 +20,10 @@ GNU gpl 3.0 view LICENSE for more details
 ## How to play the game!
 1. Open this project using Unity editor version 2021.3.9f1
 2. Launch the game by clicking the play button.
-3. In the top left is your first objective.
-<img src="Capstone/Img/Objectives.png">
+3. In the top left is your first objective. <img src="Capstone/Img/Objectives.png">
+4. Take a look around the room, as you complete tasks, new ones will appear. <img src="Capstone/Img/Decor.png">
+5. Now let's complete a few tasks, maybe you'll encounter this guys here. Slay him with the sword in the middle of the room. <img src="Capstone/Img/Goblin.png">
+6. Now that you've done some tasks take a look at the top right and see what your score is. How high can you get? <img src="Capstone/Img/Score.png">
 
 
 ### Research & Planning Log

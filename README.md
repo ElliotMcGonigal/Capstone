@@ -17,9 +17,11 @@ This is a game in Unity where you complete tasks to get a higher score. It is fa
 ## License
 GNU gpl 3.0 view LICENSE for more details
 
-
-
-
+## How to play the game!
+1. Open this project using Unity editor version 2021.3.9f1
+2. Launch the game by clicking the play button.
+3. In the top left is your first objective.
+<img src="Capstone/Img/Objectives.png">
 
 
 ### Research & Planning Log

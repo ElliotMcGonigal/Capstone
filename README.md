@@ -4,12 +4,18 @@
 This is a game in Unity where you complete tasks to get a higher score. It is fantasy themed with a goblin and a baby dragon making an appearance.
 ## Technologies Used
 * C#
+* Unity
+* Unity Editor
+* Git
+* VSCode
 
+## Known Bugs/Issues
+- The sword can disappear in the pillar and complete the pillar task.
+- The goblin's movement is super weird and jittery.
+- No pop-up when you complete a task, so it is sometimes confusing when you get two tasks in a row.
 
-
-
-
-
+## License
+GNU gpl 3.0 view LICENSE for more details
 
 
 

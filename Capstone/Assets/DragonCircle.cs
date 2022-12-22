@@ -9,6 +9,7 @@ public class DragonCircle : MonoBehaviour
     float width;
     void Start()
     {
+        transform.rotation = Quaternion.Euler(0, 90, 0);
         speed = .1f;
         width = 18f;
     }
@@ -20,10 +21,9 @@ public class DragonCircle : MonoBehaviour
         float x = (Mathf.Cos(timeCounter))*width;
         float y = 5;
         float z = (Mathf.Sin(timeCounter))*width;
-        float xx = (Mathf.Cos(timeCounter + speed))*width;
-        float zz = (Mathf.Cos(timeCounter + speed))*width;
 
         transform.position = new Vector3(x, y, z);
-        transform.LookAt(new Vector3(xx, y, zz));
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(x, y, z));
+        transform.rotation = Quaternion.Euler(lookRotation.eulerAngles.x, lookRotation.eulerAngles.y - 90, lookRotation.eulerAngles.z);
     }
 }
